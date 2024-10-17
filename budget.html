@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spisesteder</title>
+</head>
+<body>
+    <link rel="stylesheet" href="budget.css">
+</head>
+<body>
+   
+
+<!-- Navbar -->
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">Bali På Budget</a> <!-- Navigerer til forsiden -->
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="om-bali.html">Om Bali</a></li> 
+                <li><a href="aktiviteter.html">Aktiviteter</a></li>
+                <li><a href="spisesteder.html">Spisesteder</a></li>
+                <li><a href="overnatning.html">Overnatning</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="home">
+    <div class="home-text">
+        <h2>Budget</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Ipsum ratione facere animi impedit rem labore sint<br> repellendus ipsa sapiente voluptatem aut excepturi quo<br> itaque, ab earum cumque. voluptatem aut excepturi quo <br>itaque, ab earum cumque. </p>
+    </div>
+</section>
+<div style="height: 500px"></div>
+
+<div class="divider"></div>
+
+<section class="image-text-section">
+    <div class="image-container">
+        <img src="images/budgetbillede.jpg" alt="Beskrivelse af billedet">
+    </div>
+    <div class="text-container">
+        <h2>Mit bydget</h2>
+        <p>Jeg har delt mit budget for min 5-ugers rejse til Bali,<br> som et eksempel på, hvordan du kan få en fantastisk<br> rejse, selvom det er på budget.<br><br>
+ 
+            Dette budget viser, at det er muligt at nyde Bali fuldt<br> ud, selv med begrænsede midler. Du kan tage <br>udgangspunkt i mine udgifter og justere dem efter <br>dine egne præferencer og behov. Måske ønsker du<br> at prioritere mere komfortable overnatninger og <br>dermed justere beløbet til mad eller aktiviteter.<br><br>
+            
+            Uanset hvad, er det vigtigt at finde en balance, der<br> passer til dig, så du får mest muligt ud af din rejse.<br> Jeg håber, at mit budget kan være en nyttig guide<br> til at planlægge din egen uforglemmelige oplevelse <br>på Bali.
+            
+            </p>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <figure class="footer-logo">
+        <img src="images/logo.png" alt="Bali på budget" />
+    </figure>
+    <section class="footer-content">
+        
+        <article class="footer-columns">
+            <article class="footer-column">
+                <h4>Balipåbudget</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Om Bali</a></li>
+                    <li><a href="#">Aktiviteter</a></li>
+                    <li><a href="#">Spisesteder</a></li>
+                    <li><a href="#">Overnatning</a></li>
+                    <li><a href="#">Budget</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <h4>Mere</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Seneste</a></li>
+                    <li><a href="#">Om cookies</a></li>
+                    <li><a href="#">Vilkår</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <h4>Kontakt</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Mail:chespersen@gmail.com</a></li>
+                    <li><a href="#">Tlf: +45 61339784</a></li>
+                </ul>
+            </article>
+        </article>
+    </section>
+</footer>
+
+
+
+<!-- jQuery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+<script src="./script.js"></script>
+</body>
+</html> 
+</body>
+</html>

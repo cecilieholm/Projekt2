@@ -1,0 +1,543 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    background-color: #FEFBF4; /* Ændret baggrundsfarve */
+}
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 2%;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 3rem;
+}
+
+.nav div.logo a:hover {
+    color: #000000;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 65px;
+    font-size: 250%;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #000000;
+}
+
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: #d7d4c3; /* Baggrundsfarve */
+}
+
+.home-text {
+    position: absolute; /* Gør det muligt at placere teksten relativt til sektionen */
+    bottom: 40%; /* Juster denne værdi for at flytte teksten op/ned */
+    left : 0; /* Sæt til 0 for at placere det helt til højre */
+    background-color: white; /* Hvid baggrund */
+    color: rgb(0, 0, 0); /* Sort tekst */
+    font-size: 2rem; /* Størrelse på teksten */
+    text-align: left;
+    padding: 20px; /* Indvendig margin */
+    line-height: 200%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Skygge omkring boksen */
+    /* Tilføjelse for at gøre boksen lidt usynlig */
+    background-color: rgba(255, 255, 255, 0.75); /* Hvid baggrund med 85% opacitet */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Let sort kant */
+}
+.home-text h2 {
+    color: rgb(0, 0, 0); /* Sort tekst */
+    font-size: 5rem; /* Størrelse på overskriften */
+    margin: 0; /* Fjerner standard margin */
+    padding-bottom: 10px; /* Afstand under overskriften */
+    text-align: left; /* Juster teksten til højre */
+    font-weight: bold;
+    font-family: 'Merriweather', serif; /* Ændre til ønsket skrifttype */
+    
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.divider {
+    height: 1.5px; /* Højden på stregen */
+    background-color: black; /* Farven på stregen */
+    margin: 20px 10%; /* Afstand til sektionen ovenfor og nedenfor, samt til siderne */
+    width: 80%; /* Juster bredden, så den er mindre end 100% */
+}
+
+
+/* boksen der fylder det hele*/
+.section1 {
+    padding-top: 5%;
+    display: flex;
+    height: 337px;
+    padding-bottom: 4%;
+}
+
+/*boksen til venstre - teksen*/
+.kol_tekst {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+
+/*boksen til højre - billede*/
+.kol_billede {
+    flex: 1;
+    padding-right: 5%;
+}
+
+/*størrelse på billedet*/
+.billede_venstre {
+    width: 60%;
+    max-height: 160%;
+    object-fit: cover;
+    padding-left:25% ;
+}
+
+.section2 {
+    padding-top: 5%;
+    display: flex;
+    height: 336px;
+    padding-bottom: 4%;
+    padding-left: 0%;
+    flex-direction: row-reverse;
+    font-size: 200%;
+}
+
+/* Footer section */
+.footer {
+    display: flex; /* Bruger flexbox til layout */
+    align-items: center; /* Centrerer indholdet lodret */
+    background-color: #e5e0d6a7; /* Baggrundsfarve */
+    color: rgb(0, 0, 0); /* Farve på teksten */
+    padding: 20px; /* Indvendig margin */
+    margin-top: 25%; /* Juster denne værdi for at rykke footeren ned */
+}
+
+.footer-logo {
+    margin-right: 200px; /* Afstand mellem logo og tekst */
+}
+
+.footer-logo img {
+    width: 300px; /* Juster logoets bredde */
+    height: auto; /* Beholder proportioner */
+}
+
+.footer-content {
+    flex: 1; /* Giver plads til indholdet */
+}
+
+.footer-text {
+    margin: 10; /* Fjerner margin */
+    text-align: center; /* Centerer footer teksten */
+}
+
+.footer-columns {
+    display: flex; /* Bruger flexbox til at arrangere kolonnerne */
+    justify-content: space-between; /* Fordeler plads mellem kolonnerne */
+    width: 50%; /* Gør kolonnerne fylder hele bredden */
+    max-width: 800px; /* Maksimal bredde for kolonner */
+    margin-top: 10px; /* Afstand mellem footer teksten og kolonnerne */
+}
+
+.footer-column {
+    flex: 1; /* Giver hver kolonne lige meget plads */
+    margin: 0 20px; /* Afstand mellem kolonnerne */
+    font-size: 15px;
+}
+
+.footer-links {
+    list-style-type: none; /* Fjerner punkttegn */
+    padding: 0; /* Fjerner indvendig margin */
+    font-size: 10px;
+
+}
+
+.footer-links li {
+    margin: 2px 0; /* Afstand mellem hvert listeelement */
+}
+
+.footer-links a {
+    color: rgb(0, 0, 0); /* Hvid farve på links */
+    text-decoration: none; /* Fjerner understregning fra links */
+    font-size: 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Understreger links ved hover */
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #e2e1cc;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/artikel1.jpg'); /* har sat mit eget billede ind her */
+    background-position: center;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #f3eaea;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+.myH2 {
+    text-align: left; /* Ændret fra center til left */
+    font-size: 4rem;
+    padding-left: 10%;
+}
+
+.myP {
+    text-align: left; 
+    padding-left: 10%; /* Du kan justere denne værdi for at ændre margen */
+    padding-right: 50%;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #dfdacb;
+}
+
+
+
+
+
+
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}

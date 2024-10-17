@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bali på Budget</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Bali På Budget</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="om-bali.html">Om Bali</a></li> 
+                <li><a href="aktiviteter.html">Aktiviteter</a></li>
+                <li><a href="spisesteder.html">Spisesteder</a></li>
+                <li><a href="overnatning.html">Overnatning</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="home">
+    <h1 class="home-title">BALI PÅ BUDGET</h1>
+    <section class="home">
+        <div class="home-text">
+            <h2>Velkommen til min rejseblog</h2>
+            <p>Denne rejseblog handler om Bali og viser, hvordan<br> du kan få en fantastisk oplevelse uden at bruge en formue. <br>Jeg deler mine bedste tips og erfaringer fra mine rejser,<br> så du kan nyde alt, hvad øen har at byde på,<br> uden at sprænge budgettet.</p>
+        </div>
+    </section>
+    <div class="divider"></div> <!-- Denne linje tilføjer stregen -->
+
+<div style="height: 1000px">
+    <section class="section1">
+        <div class="kol_tekst">
+            <div>
+                <h1 class="venstre_overskrift"><br><br><br><br>Om mig</h1>
+                <p class="tekst_venstre">
+                    Mit navn er Cecilie, og jeg er 22 år gammel. <br>Jeg er oprindeligt fra Hjørring, hvor jeg er<br> vokset op med min familie. Efter at have <br>afsluttet hhx i 2022, besluttede jeg mig for<br> at tage to sabbatår. I denne periode<br> arbejdede jeg i hjemmeplejen for at spare <br>op til de rejser, jeg havde drømt om gennem<br> hele min gymnasietid.<br><br>
+
+                    Jeg har haft fornøjelsen af at rejse til Fransk<br> Polynesien, Asien og Indonesien. En af de <br>vigtigste lektioner, jeg lærte under mine<br> rejser, er, at man sagtens kan rejse på<br> budget og stadig få uforglemmelige<br> oplevelser. 
+                    
+                    <br><br> I dag bor jeg i Aarhus med min <br>kæreste. Jeg er lige begyndt at studere <br>multimediedesign, hvilket jeg er meget glad <br>for. Hvad fremtiden bringer er ikke til at vide,<br> men jeg håber på flere uforglemmelige <br>minder.
+                   
+                </p>
+            </div>
+        </div>
+
+        <div class="kol_billede">
+            <img src="images/mig.jpg" alt="billede 1" class="billede_venstre">
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="footer">
+    <figure class="footer-logo">
+        <img src="images/logo.png" alt="Bali på budget" />
+    </figure>
+    <section class="footer-content">
+        
+        <article class="footer-columns">
+            <article class="footer-column">
+                <h4>Balipåbudget</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Om Bali</a></li>
+                    <li><a href="#">Aktiviteter</a></li>
+                    <li><a href="#">Spisesteder</a></li>
+                    <li><a href="#">Overnatning</a></li>
+                    <li><a href="#">Budget</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <h4>Mere</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Seneste</a></li>
+                    <li><a href="#">Om cookies</a></li>
+                    <li><a href="#">Vilkår</a></li>
+                </ul>
+            </article>
+            <article class="footer-column">
+                <h4>Kontakt</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Mail:chespersen@gmail.com</a></li>
+                    <li><a href="#">Tlf: +45 61339784</a></li>
+                </ul>
+            </article>
+        </article>
+    </section>
+</footer>
+
+<!-- jQuery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+<script src="./script.js"></script>
+</body>
+</html> 
